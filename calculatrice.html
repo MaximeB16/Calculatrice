@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input id="Sortie" type="text" class="calculator-screen" value="0" disabled>
+
+        <div class="calculator-keys">
+            <button id="clear" type="button" class="clear" onclick="SuppTout()">C</button>
+            <button id="signe" type="button" class="operator" onclick="SwitchNP()">±</button>
+            <button id="modulo" type="button" class="operator" onclick="Opperator('%')">%</button>
+            <button id="/" type="button" class="operator" onclick="Opperator('/')">÷</button>
+            
+            <button id="signe" type="button" class="operator" onclick="Opperator('^')">^</button>
+            <button id="signe" type="button" class="operator" onclick="Racine('√')">√</button>
+            <button id="signe" type="button" class="operator" onclick="Factorielle()">!</button>
+            <button id="signe" type="button" class="operator" onclick="">a</button>
+
+            <button id="7" type="button" onclick="AddChiffre('7')">7</button>
+            <button id="8" type="button" onclick="AddChiffre('8')">8</button>
+            <button id="9" type="button" onclick="AddChiffre('9')">9</button>
+            <button id="*" type="button" class="operator" onclick="Opperator('*')">×</button>
+
+            <button id="4" type="button" onclick="AddChiffre('4')">4</button>
+            <button id="5" type="button" onclick="AddChiffre('5')">5</button>
+            <button id="6" type="button" onclick="AddChiffre('6')">6</button>
+            <button id="-" type="button" class="operator"  onclick="Opperator('-')">-</button>
+
+            <button id="1" type="button" onclick="AddChiffre('1')">1</button>
+            <button id="2" type="button" onclick="AddChiffre('2')">2</button>
+            <button id="3" type="button" onclick="AddChiffre('3')">3</button>
+            <button id="+" type="button" class="operator" onclick="Opperator('+')">+</button>
+
+            <button id="0" type="button" onclick="AddChiffre('0')">0</button>
+            <button id="." type="button" onclick="AddChiffre('.')">.</button>
+            <button id="=" type="button" class="equal" onclick="Calcule()">=</button>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
